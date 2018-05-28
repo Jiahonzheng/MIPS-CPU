@@ -1,1 +1,1 @@
-Single-Cycle-CPU
+# 数字电子技术 - 单周期 `CPU`
