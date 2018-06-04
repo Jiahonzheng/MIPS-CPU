@@ -11,24 +11,24 @@
  */
 
 module Decoder(
-  input [31:0] ins,
-  output [5:0] opcode,
-  output [5:0] funct,
-  output [4:0] shamt,
+  input [31:0] Ins,
+  output [5:0] Opcode,
+  output [5:0] Funct,
+  output [4:0] Shamt,
   output [4:0] rs,
   output [4:0] rt,
   output [4:0] rd,
-  output [15:0] immediate,
-  output [25:0] address
+  output [15:0] Immediate,
+  output [25:0] Address
 );
 
-  assign opcode = ins[31:26];
-  assign funct = ins[5:0];
-  assign shamt =ins[10:6];
-  assign rs = ins[25:21];
-  assign rt = ins[20:16];
-  assign rd = ins[15:11];
-  assign immediate = ins[15:0];
-  assign address = ins[25:0];
+  assign Opcode = Ins[31:26];
+  assign Funct = Ins[5:0];
+  assign Shamt = Ins[10:6];
+  assign rs = Ins[25:21];
+  assign rt = Ins[20:16];
+  assign rd = Ins[15:11];
+  assign Immediate = Ins[15:0];
+  assign Address = Ins[25:0];
 
 endmodule
