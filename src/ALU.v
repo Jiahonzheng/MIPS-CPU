@@ -14,7 +14,7 @@ module ALU(
     Result = 0;
   end
 
-  assign Zero = Result == 0 ? 0 : 1;
+  assign Zero = Result == 0 ? 1 : 0;
   assign Sign = Result[31];
 
   always@(*) begin
@@ -25,8 +25,8 @@ module ALU(
       `ALU_OR: Result = ReadData1 | ReadData2;
       `ALU_SLL: Result = ReadData2 << ReadData1;
       `ALU_CMPU: Result = (ReadData1 < ReadData2) ? 1 : 0;
-      `ALU_CMPS: Result = (((ReadData1 < ReadData2) && (ReadData1[31] == ReadData2[32]) || (ReadData1[31] && !ReadData2[31])) ? 1 : 0;
-      default: Result = 0;
+      `ALU_CMPS: Result = (((ReadData1 < ReadData2) && (ReadData1[31] == ReadData2[31])) || (ReadData1[31] == 1 && ReadData2[31] == 0)) ? 1 : 0;
+      default: Result = 8'h00000000;
     endcase
   end
 

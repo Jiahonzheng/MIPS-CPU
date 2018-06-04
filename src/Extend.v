@@ -2,12 +2,12 @@
 `include "Constants.v"
 
 module Extend(
-  input [15:0] Immediate16,
+  input [15:0] Immediate,
   input ExtSel,
-  output [31:0] Immediate32
+  output [31:0] ExtImmediate
 );
 
-  assign Immediate32[15:0] = Immediate16[15:0];
-  assign Immediate32[31:16] = (ExtSel && Immediate16[15]) ? 16'hFFFF : 16'h0000;
+  assign ExtImmediate[15:0] = Immediate[15:0];
+  assign ExtImmediate[31:16] = (ExtSel && Immediate[15]) ? 16'hFFFF : 16'h0000;
 
 endmodule

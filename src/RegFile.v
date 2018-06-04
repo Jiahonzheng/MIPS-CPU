@@ -15,8 +15,8 @@ module RegFile(
   integer index;
   reg [31:0] regFile[1:31];
 
-  assign ReadData1 = ReadData1 ? regFile[ReadReg1] : 0;
-  assign ReadData2 = ReadData2 ? regFile[ReadReg2] : 0;
+  assign ReadData1 = ReadReg1 == 0 ? 0 : regFile[ReadReg1];
+  assign ReadData2 = ReadReg2 == 0 ? 0 : regFile[ReadReg2];
 
   always@(negedge CLK or negedge Reset) begin
     if (Reset == 0) begin
@@ -24,7 +24,7 @@ module RegFile(
         regFile[index] <= 0;
       end
     end
-    else if (RegWre == 1 && WriteReg) begin
+    else if (RegWre == 1 && WriteReg != 0) begin
       regFile[WriteReg] <= WriteData;
     end
   end

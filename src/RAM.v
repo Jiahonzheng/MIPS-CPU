@@ -11,17 +11,17 @@ module RAM(
 
   reg [7:0] ram[0:60];
 
-  assign Dataout[7:0] = nRD == 0 ? ram[address + 3] : 8'bz;
-  assign Dataout[15:8] = nRD==0 ?ram[address + 2] : 8'bz;
-  assign Dataout[23:16] = nRD==0 ?ram[address + 1] : 8'bz;
-  assign Dataout[31:24] = nRD==0 ?ram[address] : 8'bz;
+  assign DataOut[7:0] = nRD == 0 ? ram[Address + 3] : 8'bz;
+  assign DataOut[15:8] = nRD == 0 ?ram[Address + 2] : 8'bz;
+  assign DataOut[23:16] = nRD == 0 ?ram[Address + 1] : 8'bz;
+  assign DataOut[31:24] = nRD == 0 ?ram[Address] : 8'bz;
 
   always@(negedge CLK) begin
     if (nWR == 0) begin
-      ram[address] <= WriteData[31:24];
-      ram[address + 1] <= WriteData[23:16];
-      ram[address + 2] <= WriteData[15:8];
-      ram[address + 3] <= WriteData[7:0];
+      ram[Address] <= WriteData[31:24];
+      ram[Address + 1] <= WriteData[23:16];
+      ram[Address + 2] <= WriteData[15:8];
+      ram[Address + 3] <= WriteData[7:0];
     end
   end
 

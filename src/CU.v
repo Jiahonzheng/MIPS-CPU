@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`include "head.v"
+`include "Constants.v"
 
 module CU(
   input [5:0] Opcode,
@@ -7,15 +7,15 @@ module CU(
   input Zero,
   input Sign,
   output ALUSrcA,
+  output reg ALUSrcB,
   output RegDst,
   output DB,
   output ExtSel,
   output nRD,
-  output, nWR,
-  output reg ALUSrcB,
+  output nWR,
   output reg RegWre,
-  output reg [1:0] PCSel,
-  output reg [2:0] ALUOp,
+  output reg [1:0] PCSrc,
+  output reg [2:0] ALUOp
 );
 
   // ALUSrcA
@@ -24,7 +24,7 @@ module CU(
   // ALUSrcB
   always@(*) begin
     case(Opcode)
-      `OP_ADD, `OP_LW, `OP_SW, `OP_ORI: ALUSrcB = `ALU_FROM_IMMD;
+      `OP_ADDI, `OP_LW, `OP_SW, `OP_ORI: ALUSrcB = `ALU_FROM_IMMD;
       default: ALUSrcB = `ALU_FROM_DATA;
     endcase
   end
@@ -52,15 +52,15 @@ module CU(
   // ExtSel
   assign ExtSel = (Opcode == `OP_ORI) ? `EXT_ZERO : `EXT_SIGN;
 
-  // PCSel
+  // PCSrc
   always@(*) begin
     case(Opcode)
-      `OP_BEQ: PCSel = Zero == 1 ? `PC_REL_JMP : `PC_NEXT_INS;
-      `OP_BNE: PCSel = Zero == 1 ? `PC_NEXT_INS : `PC_REL_JMP;
-      `OP_BGTZ: PCSel = (Sign == 0 && Zero == 0) ? `PC_REL_JMP : `PC_NEXT_INS;
-      `OP_J: PCSel = `PC_ABS_JMP;
-      `OP_HALT: PCSel = `PC_HALT;
-      default: PCSel = `PC_NEXT_INS;
+      `OP_BEQ: PCSrc = Zero == 1 ? `PC_REL_JMP : `PC_NEXT_INS;
+      `OP_BNE: PCSrc = Zero == 1 ? `PC_NEXT_INS : `PC_REL_JMP;
+      `OP_BGTZ: PCSrc = (Sign == 0 && Zero == 0) ? `PC_REL_JMP : `PC_NEXT_INS;
+      `OP_J: PCSrc = `PC_ABS_JMP;
+      `OP_HALT: PCSrc = `PC_HALT;
+      default: PCSrc = `PC_NEXT_INS;
     endcase
   end
 
@@ -74,9 +74,8 @@ module CU(
           `FUNCT_AND: ALUOp = `ALU_AND;
           `FUNCT_OR: ALUOp = `ALU_OR;
           `FUNCT_SLL: ALUOp = `ALU_SLL;
-          `FUNCT_SLT: ALUOp = `ALU_SLT;
-          // Perhaps, default case is not neccessary.
-          // default: ALUOp = `ALU_ADD;
+          `FUNCT_SLT: ALUOp = `ALU_CMPS;
+          default: ALUOp = `ALU_ADD;
         endcase
       end
       `OP_ORI: ALUOp = `ALU_OR;

@@ -1,19 +1,19 @@
 `timescale 1ns/1ps
 
 module ROM (
-  input nrd, 
-  input [31:0] Address
+  input nRD, 
+  input [31:0] Address,
   output reg [31:0] DataOut
 );
     
   reg [7:0] rom [0:99];
   
   initial begin
-      $readmemh ("C:/Users/Administrator/Desktop/workplace/CPU/ROMdata/data.txt", rom);
+      $readmemh ("E:/Users/Code/Single-Cycle-CPU/Data/ROM.txt", rom);
   end
     
   always@(*) begin
-    if (nrd == 0) begin
+    if (nRD == 0) begin
       DataOut[31:24] = rom[Address];
       DataOut[23:16] = rom[Address + 1];
       DataOut[15:8] = rom[Address + 2];

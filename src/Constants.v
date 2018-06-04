@@ -28,8 +28,8 @@
 // ALU
 `define ALU_ADD 3'b000
 `define ALU_AND 3'b010
-`define ALU_CMPS 3'b110
-`define ALU_CMPU 3'b101
+`define ALU_CMPS 3'b101
+`define ALU_CMPU 3'b100
 `define ALU_FROM_DATA 1'b0
 `define ALU_FROM_IMMD 1'b1
 `define ALU_FROM_SA 1'b1
