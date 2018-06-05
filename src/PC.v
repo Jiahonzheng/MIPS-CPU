@@ -26,12 +26,13 @@ module PCHelper(
     NewPC = 0;
   end
 
+  // Extend 16-bit immediate value to 32-bit immediate value
   wire [31:0] ExtImmediate = {{16{Immediate[15]}}, Immediate};
 
   always@(*) begin
     case(PCSrc)
       `PC_NEXT_INS: NewPC <= pc + 4;
-      `PC_REL_JMP: NewPC <= (pc + 4 + (ExtImmediate << 2));
+      `PC_REL_JMP: NewPC <= pc + 4 + (ExtImmediate << 2);
       `PC_ABS_JMP: NewPC <= {pc[31:28], Address, 2'b00};
       `PC_HALT: NewPC <= pc;
     endcase

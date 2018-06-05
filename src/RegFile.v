@@ -20,6 +20,9 @@ module RegFile(
 
   always@(negedge CLK or negedge Reset) begin
     if (Reset == 0) begin
+      // The for statement using here would increase unneccessary units'usage.
+      // However, to make the code more developer-friendly, I used this kind 
+      // of statement.
       for (index = 1; index < 32; index = index + 1) begin
         regFile[index] <= 0;
       end

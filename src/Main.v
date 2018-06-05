@@ -34,7 +34,7 @@ module CPU(
   wire Sign;
   wire ALUSrcA;
   wire ALUSrcB;
-  wire DB;
+  wire MemToReg;
   wire RegWrite;
   wire MemRead;
   wire MemWrite;
@@ -78,7 +78,7 @@ module CPU(
   );
 
   assign WriteReg = RegDst == `REG_FROM_RT ? rt : rd;
-  assign RegWriteData = DB == `DB_FROM_ALU ? ALUResult : RAMOut;
+  assign RegWriteData = MemToReg == `REG_FROM_ALU ? ALUResult : RAMOut;
 
   RegFile RegFile(
     .CLK(CLK),
@@ -126,7 +126,7 @@ module CPU(
     .Sign(Sign),
     .ALUSrcA(ALUSrcA),
     .ALUSrcB(ALUSrcB),
-    .DB(DB),
+    .MemToReg(MemToReg),
     .ExtSel(ExtSel),
     .MemRead(MemRead),
     .MemWrite(MemWrite),

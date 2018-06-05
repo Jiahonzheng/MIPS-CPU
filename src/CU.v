@@ -9,7 +9,7 @@ module CU(
   output ALUSrcA,
   output reg ALUSrcB,
   output RegDst,
-  output DB,
+  output MemToReg,
   output ExtSel,
   output MemRead,
   output MemWrite,
@@ -29,14 +29,14 @@ module CU(
     endcase
   end
 
-  // DB
-  assign DB = (Opcode == `OP_LW) ? `DB_FROM_DM : `DB_FROM_ALU;
+  // MemToReg
+  assign MemToReg = Opcode == `OP_LW ? `REG_FROM_DATAMEMORY : `REG_FROM_ALU;
 
   // MemRead
-  assign MemRead = (Opcode == `OP_LW) ? 0 : 1;
+  assign MemRead = Opcode == `OP_LW ? 0 : 1;
   
   // MemWrite
-  assign MemWrite = (Opcode == `OP_SW) ? 0 : 1;
+  assign MemWrite = Opcode == `OP_SW ? 0 : 1;
   
   // RegWrite
   always@(*) begin
@@ -47,17 +47,17 @@ module CU(
   end
 
   // RegDst
-  assign RegDst = (Opcode == `OP_LW || Opcode == `OP_ADDI || Opcode == `OP_ORI) ? `REG_FROM_RT : `REG_FROM_RD;
+  assign RegDst = Opcode == `OP_LW || Opcode == `OP_ADDI || Opcode == `OP_ORI ? `REG_FROM_RT : `REG_FROM_RD;
 
   // ExtSel
-  assign ExtSel = (Opcode == `OP_ORI) ? `EXT_ZERO : `EXT_SIGN;
+  assign ExtSel = Opcode == `OP_ORI ? `EXT_ZERO : `EXT_SIGN;
 
   // PCSrc
   always@(*) begin
     case(Opcode)
       `OP_BEQ: PCSrc = Zero == 1 ? `PC_REL_JMP : `PC_NEXT_INS;
       `OP_BNE: PCSrc = Zero == 1 ? `PC_NEXT_INS : `PC_REL_JMP;
-      `OP_BGTZ: PCSrc = (Sign == 0 && Zero == 0) ? `PC_REL_JMP : `PC_NEXT_INS;
+      `OP_BGTZ: PCSrc = Sign == 0 && Zero == 0 ? `PC_REL_JMP : `PC_NEXT_INS;
       `OP_J: PCSrc = `PC_ABS_JMP;
       `OP_HALT: PCSrc = `PC_HALT;
       default: PCSrc = `PC_NEXT_INS;
