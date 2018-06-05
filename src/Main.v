@@ -12,7 +12,6 @@ module CPU(
   wire [1:0] PCSrc;
 
   wire [31:0] Ins;
-  wire ROMnRD = 0;
 
   wire [5:0] Opcode;
   wire [5:0] Funct;
@@ -61,11 +60,9 @@ module CPU(
     .NewPC(NewPC)
   );
 
-  
-  ROM ROM(
-    .nRD(ROMnRD),
+  InstructionMemory InstructionMemory(
     .Address(pc),
-    .DataOut(Ins)
+    .Ins(Ins)
   );
   
   Decoder decoder(
@@ -113,6 +110,15 @@ module CPU(
     .Sign(Sign)
   );
 
+  RAM RAM(
+    .CLK(CLK),
+    .Address(ALUResult),
+    .WriteData(RegReadData2),
+    .nRD(nRD),
+    .nWR(nWR),
+    .DataOut(RAMOut)
+  );
+
   CU CU(
     .Opcode(Opcode),
     .Funct(Funct),
@@ -128,15 +134,6 @@ module CPU(
     .RegWre(RegWre),
     .PCSrc(PCSrc),
     .ALUOp(ALUOp)
-  );
-
-  RAM RAM(
-    .CLK(CLK),
-    .Address(ALUResult),
-    .WriteData(RegReadData2),
-    .nRD(nRD),
-    .nWR(nWR),
-    .DataOut(RAMOut)
   );
 
 endmodule
