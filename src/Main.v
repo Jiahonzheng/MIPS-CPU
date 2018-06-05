@@ -35,9 +35,9 @@ module CPU(
   wire ALUSrcA;
   wire ALUSrcB;
   wire DB;
-  wire RegWre;
-  wire nRD;
-  wire nWR;
+  wire RegWrite;
+  wire MemRead;
+  wire MemWrite;
   wire RegDst;
   wire ExtSel;
   wire [2:0] ALUOp;
@@ -83,7 +83,7 @@ module CPU(
   RegFile RegFile(
     .CLK(CLK),
     .Reset(Reset),
-    .RegWre(RegWre),
+    .RegWrite(RegWrite),
     .ReadReg1(rs),
     .ReadReg2(rt),
     .WriteReg(WriteReg),
@@ -110,13 +110,13 @@ module CPU(
     .Sign(Sign)
   );
 
-  RAM RAM(
+  DataMemory DataMemory(
     .CLK(CLK),
     .Address(ALUResult),
     .WriteData(RegReadData2),
-    .nRD(nRD),
-    .nWR(nWR),
-    .DataOut(RAMOut)
+    .MemRead(MemRead),
+    .MemWrite(MemWrite),
+    .ReadData(RAMOut)
   );
 
   CU CU(
@@ -128,10 +128,10 @@ module CPU(
     .ALUSrcB(ALUSrcB),
     .DB(DB),
     .ExtSel(ExtSel),
-    .nRD(nRD),
-    .nWR(nWR),
+    .MemRead(MemRead),
+    .MemWrite(MemWrite),
     .RegDst(RegDst),
-    .RegWre(RegWre),
+    .RegWrite(RegWrite),
     .PCSrc(PCSrc),
     .ALUOp(ALUOp)
   );

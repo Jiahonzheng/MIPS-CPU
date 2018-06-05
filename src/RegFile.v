@@ -3,7 +3,7 @@
 module RegFile(
   input CLK,
   input Reset,
-  input RegWre,
+  input RegWrite,
   input [4:0] ReadReg1,
   input [4:0] ReadReg2,
   input [4:0] WriteReg,
@@ -24,7 +24,7 @@ module RegFile(
         regFile[index] <= 0;
       end
     end
-    else if (RegWre == 1 && WriteReg != 0) begin
+    else if (RegWrite == 1 && WriteReg != 0) begin
       regFile[WriteReg] <= WriteData;
     end
   end

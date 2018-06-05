@@ -11,9 +11,9 @@ module CU(
   output RegDst,
   output DB,
   output ExtSel,
-  output nRD,
-  output nWR,
-  output reg RegWre,
+  output MemRead,
+  output MemWrite,
+  output reg RegWrite,
   output reg [1:0] PCSrc,
   output reg [2:0] ALUOp
 );
@@ -32,17 +32,17 @@ module CU(
   // DB
   assign DB = (Opcode == `OP_LW) ? `DB_FROM_DM : `DB_FROM_ALU;
 
-  // nRD
-  assign nRD = (Opcode == `OP_LW) ? 0 : 1;
+  // MemRead
+  assign MemRead = (Opcode == `OP_LW) ? 0 : 1;
   
-  // nWR
-  assign nWR = (Opcode == `OP_SW) ? 0 : 1;
+  // MemWrite
+  assign MemWrite = (Opcode == `OP_SW) ? 0 : 1;
   
-  // RegWre
+  // RegWrite
   always@(*) begin
     case(Opcode)
-      `OP_SW, `OP_BEQ, `OP_BNE, `OP_BGTZ, `OP_J, `OP_HALT: RegWre = 0;
-      default: RegWre = 1;
+      `OP_SW, `OP_BEQ, `OP_BNE, `OP_BGTZ, `OP_J, `OP_HALT: RegWrite = 0;
+      default: RegWrite = 1;
     endcase
   end
 
