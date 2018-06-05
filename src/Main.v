@@ -10,26 +10,20 @@ module CPU(
   wire [15:0] Immediate;
   wire [25:0] Address;
   wire [1:0] PCSrc;
-
   wire [31:0] Ins;
-
   wire [5:0] Opcode;
   wire [5:0] Funct;
   wire [4:0] Shamt;
   wire [4:0] rs;
   wire [4:0] rt;
   wire [4:0] rd;
-
   wire [31:0] ALUResult;
   wire [31:0] RAMOut;
-
   wire [4:0] WriteReg;
   wire [31:0] RegWriteData;
   wire [31:0] RegReadData1;
   wire [31:0] RegReadData2;
-
   wire [31:0] ExtImmediate;
-
   wire Zero;
   wire Sign;
   wire ALUSrcA;
@@ -41,7 +35,6 @@ module CPU(
   wire RegDst;
   wire ExtSel;
   wire [2:0] ALUOp;
-
   wire [31:0] ALUReadData1;
   wire [31:0] ALUReadData2;
 

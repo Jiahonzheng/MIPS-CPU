@@ -8,9 +8,10 @@ module InstructionMemory(
   reg [7:0] ROM [0:99];
 
   // Here, you should replace my file path as your own Instruction machine code's
-  // location. And you must use the absolute path.
+  // location. And you must use the absolute path. Notice the slash characters
+  // in the path.
   initial begin
-    $readmemh ("D:/Users/Documents/Code/Single-Cycle-CPU/Data/ROM.txt", ROM);
+    $readmemh ("E:/Users/Code/Single-Cycle-CPU/test/ROM.txt", ROM);
   end
   
   // MIPS Architecture uses the Big-Endian order.
