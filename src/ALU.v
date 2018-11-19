@@ -16,16 +16,17 @@ module ALU(
 
   assign Zero = Result == 0 ? 1 : 0;
   assign Sign = Result[31];
-  
+
   always@(*) begin
     case(ALUOp)
       `ALU_ADD: Result = ReadData1 + ReadData2;
       `ALU_SUB: Result = ReadData1 - ReadData2;
-      `ALU_AND: Result = ReadData1 & ReadData2;
-      `ALU_OR: Result = ReadData1 | ReadData2;
       `ALU_SLL: Result = ReadData2 << ReadData1;
+      `ALU_OR: Result = ReadData1 | ReadData2;
+      `ALU_AND: Result = ReadData1 & ReadData2;
       `ALU_CMPU: Result = ReadData1 < ReadData2 ? 1 : 0;
       `ALU_CMPS: Result = ((ReadData1 < ReadData2) && (ReadData1[31] == ReadData2[31])) || (ReadData1[31] == 1 && ReadData2[31] == 0) ? 1 : 0;
+      `ALU_XOR: Result = ReadData1 ^ ReadData2;
       default: Result = 8'h00000000;
     endcase
   end

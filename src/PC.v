@@ -4,12 +4,16 @@
 module PC(
   input CLK,
   input Reset,
+  input PCWre,
   input [31:0] NewPC,
   output reg [31:0] pc
 );
 
   always@(posedge CLK or negedge Reset) begin
-    pc <= Reset == 0 ? 0 : NewPC;
+    if (Reset == 0)
+      pc <= 0;
+    else if (PCWre)
+      pc <= NewPC;
   end
 
 endmodule

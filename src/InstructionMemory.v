@@ -1,8 +1,10 @@
 `timescale 1ns/1ps
 
 module InstructionMemory(
-  input [31:0] Address,
-  output reg [31:0] Ins
+  input [31:0] Iaddr,
+  input [31:0] IDataIn,
+  input RW,
+  output reg [31:0] IDataOut
 );
 
   reg [7:0] ROM [0:99];
@@ -13,13 +15,13 @@ module InstructionMemory(
   initial begin
     $readmemh ("E:/Users/Code/Single-Cycle-CPU/test/ROM.txt", ROM);
   end
-  
+
   // MIPS Architecture uses the Big-Endian order.
   always@(*) begin
-    Ins[31:24] = ROM[Address];
-    Ins[23:16] = ROM[Address + 1];
-    Ins[15:8] = ROM[Address + 2];
-    Ins[7:0] = ROM[Address + 3];
+    IDataOut[31:24] = ROM[Iaddr];
+    IDataOut[23:16] = ROM[Iaddr + 1];
+    IDataOut[15:8] = ROM[Iaddr + 2];
+    IDataOut[7:0] = ROM[Iaddr + 3];
   end
 
 endmodule
