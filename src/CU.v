@@ -29,7 +29,7 @@ module CU(
   // ALUSrcB
   always@(*) begin
     case(Opcode)
-      `OP_ADDIU, `OP_LW, `OP_SW, `OP_ORI, `OP_SLTI: ALUSrcB = `ALU_FROM_IMMD;
+      `OP_ADDIU, `OP_LW, `OP_SW, `OP_ORI, `OP_SLTI, `OP_ANDI: ALUSrcB = `ALU_FROM_IMMD;
       default: ALUSrcB = `ALU_FROM_DATA;
     endcase
   end
