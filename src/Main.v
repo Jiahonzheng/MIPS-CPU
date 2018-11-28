@@ -1,9 +1,17 @@
 `timescale 1ns / 1ps
 
 module CPU(
-  input CLK,
-  input Reset
+  input Ori_CLK,
+  input Key_CLK,
+  input [1:0] status,
+  input Reset,
+  output [3:0] LED_Number,
+  output [6:0] LED_Code
 );
+
+  wire CLK;
+  wire Div_CLK;
+
   // Control Unit
   wire PCWre;
   wire ALUSrcA;
@@ -70,6 +78,32 @@ module CPU(
 
   assign ALUReadData1 = ALUSrcA == `ALU_FROM_DATA ? RegReadData1 : {{27{1'b0}}, Shamt};
   assign ALUReadData2 = ALUSrcB == `ALU_FROM_DATA ? RegReadData2 : ExtImmediate;
+
+  DivCLK divCLK(
+    .originClock(Ori_CLK),
+    .divClock(Div_CLK)
+  );
+
+  KeyCLK keyCLK(
+    .CLK(Div_CLK),
+    .KeyPressed(Key_CLK),
+    .CPU_CLK(CLK)
+  );
+
+  LED led(
+    .Switch_Status(status),
+    .Div_CLK(Div_CLK),
+    .presentPC(pc),
+    .nextPC(NewPC),
+    .RS_Addr({2'b00, rs}),
+    .RS_Data(RegReadData1),
+    .RT_Addr({2'b00, rt}),
+    .RT_Data(RegReadData2),
+    .ALU_Result(ALUResult[7:0]),
+    .DB_Data(RAMOut[7:0]),
+    .LED_Number(LED_Number),
+    .LED_Code(LED_Code)
+  );
 
   PC PC(
     .CLK(CLK),
