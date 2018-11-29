@@ -98,7 +98,7 @@ module CPU(
     .RT_Addr({2'b00, rt}),
     .RT_Data(RegReadData2),
     .ALU_Result(ALUResult[7:0]),
-    .DB_Data(RAMOut[7:0]),
+    .DB_Data(RegWriteData[7:0]),
     .LED_Number(LED_Number),
     .LED_Code(LED_Code)
   );
