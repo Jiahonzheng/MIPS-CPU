@@ -3,7 +3,6 @@
 
 module CU(
   input [5:0] Opcode,
-  input [5:0] Funct,
   input Zero,
   input Sign,
   output PCWre,

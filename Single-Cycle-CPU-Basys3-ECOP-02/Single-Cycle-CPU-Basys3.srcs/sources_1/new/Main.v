@@ -55,7 +55,6 @@ module CPU(
   // Instruction Structure
   wire [31:0] Ins;
   wire [5:0] Opcode;
-  wire [5:0] Funct;
   wire [4:0] Shamt;
   wire [4:0] rs;
   wire [4:0] rt;
@@ -65,7 +64,6 @@ module CPU(
 
   // Decode Instruction
   assign Opcode = Ins[31:26];
-  assign Funct = Ins[5:0];
   assign Shamt = Ins[10:6];
   assign rs = Ins[25:21];
   assign rt = Ins[20:16];
@@ -161,7 +159,6 @@ module CPU(
 
   CU CU(
     .Opcode(Opcode),
-    .Funct(Funct),
     .Zero(Zero),
     .Sign(Sign),
     .PCWre(PCWre),
