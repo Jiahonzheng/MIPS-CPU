@@ -1,7 +1,61 @@
-# OSX
-#
-.DS_Store
+*
+!*/
+!report/
+!*.doc
+!*.docx
+!*.pdf
+!README.md
+!.gitignore
 
-# editors
-#
-.vscode
+# Vivado
+# Source Files
+!*.vhd
+!*.v
+!*.bd
+!*.edif
+
+# IP Files
+!*.xci
+!*.dcp
+!*.vds
+!*.pb
+!*.ui
+!*.ooc
+
+# System Generator
+!*.mdl
+!*.slx
+!*.bxml
+
+# Simulation Logic Analyzer
+!*.wcfg
+!*.coe
+
+# MIG
+!*.prj
+!*.mem
+
+# Project Files
+!*.xpr
+!*.xml
+
+# Constraint Files
+!*.xdc
+
+# TCL Files
+!*.tcl
+
+# Journal Files
+!*.jou
+
+# Reports
+!*.rpt
+!*.txt
+!*.vdi
+
+# C Files
+!*.c
+!*.h
+!*.elf
+!*.bmm
+!*.xmp

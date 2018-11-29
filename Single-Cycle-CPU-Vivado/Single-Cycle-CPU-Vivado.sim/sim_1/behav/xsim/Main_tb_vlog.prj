@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/ALU.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/CU.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/DataMemory.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/Decoder.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/Extend.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/InstructionMemory.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/Main.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/PC.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sources_1/imports/src/RegFile.v" \
+"../../../../Single-Cycle-CPU-Vivado.srcs/sim_1/imports/testbench/Main_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

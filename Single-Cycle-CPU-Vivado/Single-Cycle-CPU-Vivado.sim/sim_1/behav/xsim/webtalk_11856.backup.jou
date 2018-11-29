@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jul 10 14:03:08 2018
+# Process ID: 11856
+# Current directory: D:/Users/Documents/Code/Single-Cycle-CPU/dist/Single-Cycle-CPU-Vivado/Single-Cycle-CPU-Vivado.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Users/Documents/Code/Single-Cycle-CPU/dist/Single-Cycle-CPU-Vivado/Single-Cycle-CPU-Vivado.sim/sim_1/behav/xsim/xsim.dir/Main_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Users/Documents/Code/Single-Cycle-CPU/dist/Single-Cycle-CPU-Vivado/Single-Cycle-CPU-Vivado.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Users/Documents/Code/Single-Cycle-CPU/dist/Single-Cycle-CPU-Vivado/Single-Cycle-CPU-Vivado.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Users/Documents/Code/Single-Cycle-CPU/dist/Single-Cycle-CPU-Vivado/Single-Cycle-CPU-Vivado.sim/sim_1/behav/xsim/xsim.dir/Main_tb_behav/webtalk/xsim_webtalk.tcl -notrace

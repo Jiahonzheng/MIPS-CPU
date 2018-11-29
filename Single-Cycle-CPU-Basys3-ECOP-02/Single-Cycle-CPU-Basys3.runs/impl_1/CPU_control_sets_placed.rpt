@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Nov 28 22:25:06 2018
+| Host         : Jiahon-Station running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    98 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            1 |
+|      8 |           61 |
+|     13 |            1 |
+|    16+ |           33 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |             492 |          272 |
+| Yes          | No                    | Yes                    |            1005 |          477 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------+-----------------------------+------------------+----------------+
+|    Clock Signal    |        Enable Signal        |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------+-----------------------------+------------------+----------------+
+|  Div_CLK_BUFG      |                             | led/selector[0]_i_1_n_0     |                1 |              2 |
+|  Div_CLK_BUFG      |                             | led/selector[0]             |                1 |              2 |
+|  Div_CLK_BUFG      | led/Digital[3]_i_1_n_0      |                             |                1 |              4 |
+| ~CLK_BUFG          | PC/RAM_reg[20][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[9][7]_0[0]       |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/E[0]                     |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[0][7][0]         |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[19][0][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[13][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[15][0][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[11][0][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[1][7]_0[0]       |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[37][7][0]        |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[16][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[10][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[17][7]_0[0]      |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[12][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[14][7][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[18][7]_0[0]      |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[31][0][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[36][7][0]        |                             |                2 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[30][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[38][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[3][0][0]         |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[59][0][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[39][0][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[25][7][0]        |                             |                7 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[24][7]_0[0]      |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[27][0][0]        |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[21][7][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[26][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[33][7]_0[0]      |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[2][7]_0[0]       |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[22][7]_0[0]      |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[23][0][0]        |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[35][0][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[32][7][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[34][7]_0[0]      |                             |                2 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[29][7][0]        |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[28][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[53][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[54][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[42][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[55][0][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[40][7]_0[0]      |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[47][0][0]        |                             |                8 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[48][7][0]        |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[46][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[4][7][0]         |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[43][0][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[50][7][0]        |                             |                7 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[52][7]_0[0]      |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[56][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[49][7]_0[0]      |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[45][7][0]        |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[41][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[51][0][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[44][7][0]        |                             |                4 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[6][7][0]         |                             |                3 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[5][7]_0[0]       |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[8][7][0]         |                             |                2 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[57][7][0]        |                             |                6 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[58][7]_0[0]      |                             |                5 |              8 |
+| ~CLK_BUFG          | PC/RAM_reg[7][0][0]         |                             |                6 |              8 |
+|  CLK_BUFG          | PC/PCWre                    | RegFile/regFile_reg[1][0]_0 |                6 |             13 |
+|  Ori_CLK_IBUF_BUFG |                             |                             |                5 |             17 |
+|  Div_CLK_BUFG      |                             |                             |               10 |             27 |
+| ~CLK_BUFG          | PC/regFile_reg[2][31][0]    | RegFile/regFile_reg[1][0]_0 |               13 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[27][31][0]   | RegFile/regFile_reg[1][0]_0 |               11 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[16][31][0]   | RegFile/regFile_reg[1][0]_0 |               13 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[25][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[1][31][0]    | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[14][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[22][31][0]   | RegFile/regFile_reg[1][0]_0 |               16 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[24][31][0]   | RegFile/regFile_reg[1][0]_0 |               11 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[26][31][0]   | RegFile/regFile_reg[1][0]_0 |               13 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[13][31][0]   | RegFile/regFile_reg[1][0]_0 |               17 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[21][31][0]   | RegFile/regFile_reg[1][0]_0 |               10 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[28][31][0]   | RegFile/regFile_reg[1][0]_0 |               14 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[29][31][0]   | RegFile/regFile_reg[1][0]_0 |               13 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[20][31][0]   | RegFile/regFile_reg[1][0]_0 |               11 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[10][31][0]   | RegFile/regFile_reg[1][0]_0 |               14 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[11][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[12][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[17][31][0]   | RegFile/regFile_reg[1][0]_0 |                9 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[23][31][0]   | RegFile/regFile_reg[1][0]_0 |               19 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[15][31][0]   | RegFile/regFile_reg[1][0]_0 |               20 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[18][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[30][31]_1[0] | RegFile/regFile_reg[1][0]_0 |               17 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[5][31][0]    | RegFile/regFile_reg[1][0]_0 |               13 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[3][31][0]    | RegFile/regFile_reg[1][0]_0 |               14 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[6][31][0]    | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[4][31][0]    | RegFile/regFile_reg[1][0]_0 |               12 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[7][31][0]    | RegFile/regFile_reg[1][0]_0 |               24 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[8][31][0]    | RegFile/regFile_reg[1][0]_0 |               21 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[9][31][0]    | RegFile/regFile_reg[1][0]_0 |               24 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[31][31][0]   | RegFile/regFile_reg[1][0]_0 |               22 |             32 |
+| ~CLK_BUFG          | PC/regFile_reg[19][31][0]   | RegFile/regFile_reg[1][0]_0 |               15 |             32 |
++--------------------+-----------------------------+-----------------------------+------------------+----------------+
+
+

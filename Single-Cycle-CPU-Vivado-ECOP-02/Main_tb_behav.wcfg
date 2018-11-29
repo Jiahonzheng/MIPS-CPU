@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Main_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="947791666fs"></ZoomStartTime>
+      <ZoomEndTime time="1010441667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/Main_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/PC/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/PC/NewPC" type="array">
+      <obj_property name="ElementShortName">NewPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NewPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/Ins" type="array">
+      <obj_property name="ElementShortName">Ins[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Ins[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/ALU/ReadData1" type="array">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/ALU/ReadData2" type="array">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/ALU/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/ALU/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/ALU/Sign" type="logic">
+      <obj_property name="ElementShortName">Sign</obj_property>
+      <obj_property name="ObjectShortName">Sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[1]" type="array">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[2]" type="array">
+      <obj_property name="ElementShortName">[2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[3]" type="array">
+      <obj_property name="ElementShortName">[3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[4]" type="array">
+      <obj_property name="ElementShortName">[4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[8]" type="array">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[9]" type="array">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[10]" type="array">
+      <obj_property name="ElementShortName">[10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/RegFile/regFile[11]" type="array">
+      <obj_property name="ElementShortName">[11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/CPU/DataMemory/RAM" type="array">
+      <obj_property name="ElementShortName">RAM[0:60][7:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[0:60][7:0]</obj_property>
+   </wvobject>
+</wave_config>
