@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mcc_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mcc_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7479166666fs"></ZoomStartTime>
+      <ZoomEndTime time="7994166667fs"></ZoomEndTime>
+      <Cursor1Time time="10600000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/mcc_sim/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/IAddr" type="array">
+      <obj_property name="ElementShortName">IAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/PC_Next" type="array">
+      <obj_property name="ElementShortName">PC_Next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Next[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/PC4" type="array">
+      <obj_property name="ElementShortName">PC4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/PC_Jump" type="array">
+      <obj_property name="ElementShortName">PC_Jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Jump[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/State" type="array">
+      <obj_property name="ElementShortName">State[2:0]</obj_property>
+      <obj_property name="ObjectShortName">State[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/mcc/rf_ins/Regs" type="array">
+      <obj_property name="ElementShortName">Regs[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Regs[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem" type="array">
+      <obj_property name="ElementShortName">Data_Mem[0:127][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Mem[0:127][7:0]</obj_property>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[41]" type="array">
+         <obj_property name="ElementShortName">[41][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[42]" type="array">
+         <obj_property name="ElementShortName">[42][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[43]" type="array">
+         <obj_property name="ElementShortName">[43][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[44]" type="array">
+         <obj_property name="ElementShortName">[44][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[45]" type="array">
+         <obj_property name="ElementShortName">[45][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[46]" type="array">
+         <obj_property name="ElementShortName">[46][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[47]" type="array">
+         <obj_property name="ElementShortName">[47][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[48]" type="array">
+         <obj_property name="ElementShortName">[48][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[49]" type="array">
+         <obj_property name="ElementShortName">[49][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[50]" type="array">
+         <obj_property name="ElementShortName">[50][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[51]" type="array">
+         <obj_property name="ElementShortName">[51][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[52]" type="array">
+         <obj_property name="ElementShortName">[52][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[53]" type="array">
+         <obj_property name="ElementShortName">[53][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[54]" type="array">
+         <obj_property name="ElementShortName">[54][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[55]" type="array">
+         <obj_property name="ElementShortName">[55][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[56]" type="array">
+         <obj_property name="ElementShortName">[56][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[57]" type="array">
+         <obj_property name="ElementShortName">[57][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[58]" type="array">
+         <obj_property name="ElementShortName">[58][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[59]" type="array">
+         <obj_property name="ElementShortName">[59][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[60]" type="array">
+         <obj_property name="ElementShortName">[60][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[61]" type="array">
+         <obj_property name="ElementShortName">[61][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[62]" type="array">
+         <obj_property name="ElementShortName">[62][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[63]" type="array">
+         <obj_property name="ElementShortName">[63][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[64]" type="array">
+         <obj_property name="ElementShortName">[64][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[64][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[65]" type="array">
+         <obj_property name="ElementShortName">[65][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[65][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[66]" type="array">
+         <obj_property name="ElementShortName">[66][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[66][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[67]" type="array">
+         <obj_property name="ElementShortName">[67][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[67][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[68]" type="array">
+         <obj_property name="ElementShortName">[68][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[68][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[69]" type="array">
+         <obj_property name="ElementShortName">[69][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[69][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[70]" type="array">
+         <obj_property name="ElementShortName">[70][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[70][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[71]" type="array">
+         <obj_property name="ElementShortName">[71][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[71][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[72]" type="array">
+         <obj_property name="ElementShortName">[72][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[72][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[73]" type="array">
+         <obj_property name="ElementShortName">[73][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[73][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[74]" type="array">
+         <obj_property name="ElementShortName">[74][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[74][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[75]" type="array">
+         <obj_property name="ElementShortName">[75][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[75][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[76]" type="array">
+         <obj_property name="ElementShortName">[76][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[76][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[77]" type="array">
+         <obj_property name="ElementShortName">[77][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[77][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[78]" type="array">
+         <obj_property name="ElementShortName">[78][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[78][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[79]" type="array">
+         <obj_property name="ElementShortName">[79][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[79][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[80]" type="array">
+         <obj_property name="ElementShortName">[80][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[80][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[81]" type="array">
+         <obj_property name="ElementShortName">[81][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[81][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[82]" type="array">
+         <obj_property name="ElementShortName">[82][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[82][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[83]" type="array">
+         <obj_property name="ElementShortName">[83][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[83][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[84]" type="array">
+         <obj_property name="ElementShortName">[84][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[84][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[85]" type="array">
+         <obj_property name="ElementShortName">[85][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[85][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[86]" type="array">
+         <obj_property name="ElementShortName">[86][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[86][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[87]" type="array">
+         <obj_property name="ElementShortName">[87][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[87][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[88]" type="array">
+         <obj_property name="ElementShortName">[88][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[88][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[89]" type="array">
+         <obj_property name="ElementShortName">[89][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[89][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[90]" type="array">
+         <obj_property name="ElementShortName">[90][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[90][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[91]" type="array">
+         <obj_property name="ElementShortName">[91][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[91][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[92]" type="array">
+         <obj_property name="ElementShortName">[92][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[92][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[93]" type="array">
+         <obj_property name="ElementShortName">[93][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[93][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[94]" type="array">
+         <obj_property name="ElementShortName">[94][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[94][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[95]" type="array">
+         <obj_property name="ElementShortName">[95][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[95][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[96]" type="array">
+         <obj_property name="ElementShortName">[96][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[96][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[97]" type="array">
+         <obj_property name="ElementShortName">[97][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[97][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[98]" type="array">
+         <obj_property name="ElementShortName">[98][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[98][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[99]" type="array">
+         <obj_property name="ElementShortName">[99][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[99][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[100]" type="array">
+         <obj_property name="ElementShortName">[100][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[100][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[101]" type="array">
+         <obj_property name="ElementShortName">[101][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[101][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[102]" type="array">
+         <obj_property name="ElementShortName">[102][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[102][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[103]" type="array">
+         <obj_property name="ElementShortName">[103][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[103][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[104]" type="array">
+         <obj_property name="ElementShortName">[104][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[104][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[105]" type="array">
+         <obj_property name="ElementShortName">[105][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[105][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[106]" type="array">
+         <obj_property name="ElementShortName">[106][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[106][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[107]" type="array">
+         <obj_property name="ElementShortName">[107][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[107][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[108]" type="array">
+         <obj_property name="ElementShortName">[108][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[108][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[109]" type="array">
+         <obj_property name="ElementShortName">[109][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[109][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[110]" type="array">
+         <obj_property name="ElementShortName">[110][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[110][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[111]" type="array">
+         <obj_property name="ElementShortName">[111][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[111][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[112]" type="array">
+         <obj_property name="ElementShortName">[112][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[112][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[113]" type="array">
+         <obj_property name="ElementShortName">[113][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[113][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[114]" type="array">
+         <obj_property name="ElementShortName">[114][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[114][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[115]" type="array">
+         <obj_property name="ElementShortName">[115][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[115][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[116]" type="array">
+         <obj_property name="ElementShortName">[116][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[116][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[117]" type="array">
+         <obj_property name="ElementShortName">[117][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[117][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[118]" type="array">
+         <obj_property name="ElementShortName">[118][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[118][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[119]" type="array">
+         <obj_property name="ElementShortName">[119][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[119][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[120]" type="array">
+         <obj_property name="ElementShortName">[120][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[120][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[121]" type="array">
+         <obj_property name="ElementShortName">[121][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[121][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[122]" type="array">
+         <obj_property name="ElementShortName">[122][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[122][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[123]" type="array">
+         <obj_property name="ElementShortName">[123][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[123][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[124]" type="array">
+         <obj_property name="ElementShortName">[124][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[124][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[125]" type="array">
+         <obj_property name="ElementShortName">[125][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[125][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[126]" type="array">
+         <obj_property name="ElementShortName">[126][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[126][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mcc_sim/mcc/dm_ins/Data_Mem[127]" type="array">
+         <obj_property name="ElementShortName">[127][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[127][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/IROut" type="array">
+      <obj_property name="ElementShortName">IROut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IROut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ReadData1" type="array">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ReadData2" type="array">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/sign" type="logic">
+      <obj_property name="ElementShortName">sign</obj_property>
+      <obj_property name="ObjectShortName">sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/extended" type="array">
+      <obj_property name="ElementShortName">extended[31:0]</obj_property>
+      <obj_property name="ObjectShortName">extended[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/DB" type="array">
+      <obj_property name="ElementShortName">DB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/op" type="array">
+      <obj_property name="ElementShortName">op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">op[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/rs" type="array">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/rt" type="array">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/sa" type="array">
+      <obj_property name="ElementShortName">sa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/immediate" type="array">
+      <obj_property name="ElementShortName">immediate[15:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/jumpaddr" type="array">
+      <obj_property name="ElementShortName">jumpaddr[25:0]</obj_property>
+      <obj_property name="ObjectShortName">jumpaddr[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ExtSel" type="logic">
+      <obj_property name="ElementShortName">ExtSel</obj_property>
+      <obj_property name="ObjectShortName">ExtSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/PCWre" type="logic">
+      <obj_property name="ElementShortName">PCWre</obj_property>
+      <obj_property name="ObjectShortName">PCWre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/IRWre" type="logic">
+      <obj_property name="ElementShortName">IRWre</obj_property>
+      <obj_property name="ObjectShortName">IRWre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/InsMemRW" type="logic">
+      <obj_property name="ElementShortName">InsMemRW</obj_property>
+      <obj_property name="ObjectShortName">InsMemRW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/WrRegDSrc" type="logic">
+      <obj_property name="ElementShortName">WrRegDSrc</obj_property>
+      <obj_property name="ObjectShortName">WrRegDSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/RegWre" type="logic">
+      <obj_property name="ElementShortName">RegWre</obj_property>
+      <obj_property name="ObjectShortName">RegWre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ALUSrcA" type="logic">
+      <obj_property name="ElementShortName">ALUSrcA</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ALUSrcB" type="logic">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/mRD" type="logic">
+      <obj_property name="ElementShortName">mRD</obj_property>
+      <obj_property name="ObjectShortName">mRD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/mWR" type="logic">
+      <obj_property name="ElementShortName">mWR</obj_property>
+      <obj_property name="ObjectShortName">mWR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/DBDataSrc" type="logic">
+      <obj_property name="ElementShortName">DBDataSrc</obj_property>
+      <obj_property name="ObjectShortName">DBDataSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/ALUOp" type="array">
+      <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/RegDst" type="array">
+      <obj_property name="ElementShortName">RegDst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mcc_sim/PCSrc" type="array">
+      <obj_property name="ElementShortName">PCSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PCSrc[1:0]</obj_property>
+   </wvobject>
+</wave_config>
