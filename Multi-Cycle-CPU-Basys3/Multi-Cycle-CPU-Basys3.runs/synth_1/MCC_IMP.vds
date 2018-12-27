@@ -1,0 +1,742 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Dec 28 04:25:27 2018
+# Process ID: 12096
+# Current directory: C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.runs/synth_1
+# Command line: vivado.exe -log MCC_IMP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MCC_IMP.tcl
+# Log file: C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.runs/synth_1/MCC_IMP.vds
+# Journal file: C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MCC_IMP.tcl -notrace
+Command: synth_design -top MCC_IMP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21240 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 339.641 ; gain = 100.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MCC_IMP' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DivCLK.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (1#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DivCLK.v:3]
+INFO: [Synth 8-6157] synthesizing module 'KeyClock' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/KeyCLK.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'KeyClock' (2#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/KeyCLK.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/LED.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/LED.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'LedDisplay' (3#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/LED.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'presentPC' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:28]
+WARNING: [Synth 8-689] width (32) of port connection 'nextPC' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:28]
+WARNING: [Synth 8-689] width (7) of port connection 'RS_Addr' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:29]
+WARNING: [Synth 8-689] width (32) of port connection 'RS_Data' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:29]
+WARNING: [Synth 8-689] width (7) of port connection 'RT_Addr' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:30]
+WARNING: [Synth 8-689] width (32) of port connection 'RT_Data' does not match port width (8) of module 'LedDisplay' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:30]
+INFO: [Synth 8-6157] synthesizing module 'Multiple_Cycle_CPU' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (4#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC_Source' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Source' (5#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:25]
+INFO: [Synth 8-6157] synthesizing module 'PC_Jumper' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Jumper' (6#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/PC.v:45]
+INFO: [Synth 8-6157] synthesizing module 'IM' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Jiahonzheng/Desktop/MIPS-CPU/Multi-Cycle-CPU-Vivado/data/instructions.txt' is read successfully [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/InstructionMemory.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'IM' (7#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RF' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:3]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:38]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:39]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (8#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SZE' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/SignZeroExtend.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SZE' (10#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/SignZeroExtend.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DM' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:3]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:21]
+INFO: [Common 17-14] Message 'Synth 8-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM 'Data_Mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "Data_Mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DM' (11#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:3]
+WARNING: [Synth 8-6090] variable 'mWR' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:187]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (12#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Multiple_Cycle_CPU' (13#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CPU.v:3]
+WARNING: [Synth 8-350] instance 'mcc_ins' of module 'Multiple_Cycle_CPU' requires 36 connections, but only 11 given [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'MCC_IMP' (14#1) [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/Main.v:3]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[27]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[26]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[25]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[24]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[23]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[22]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[21]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[20]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[19]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[18]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[17]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[16]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[15]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[14]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[13]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[12]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[11]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[10]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[9]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[8]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[7]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[6]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[5]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[4]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[3]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[2]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[1]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.586 ; gain = 172.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.586 ; gain = 172.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.586 ; gain = 172.715
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/constrs_1/new/Multi-Cycle-CPU-Basys3.xdc]
+Finished Parsing XDC File [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/constrs_1/new/Multi-Cycle-CPU-Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/constrs_1/new/Multi-Cycle-CPU-Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MCC_IMP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MCC_IMP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 746.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Digital" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'CU'
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExtSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "IRWre" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "InsMemRW" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ExtSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCSrc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegDst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALUSrcA" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "State0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/InstructionMemory.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'WReg_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/RegFile.v:23]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                              001 |                              000
+                  iSTATE |                              111 |                              001
+                 iSTATE4 |                              101 |                              101
+                 iSTATE3 |                              100 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE5 |                              000 |                              100
+                 iSTATE2 |                              110 |                              110
+                 iSTATE1 |                              010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:140]
+WARNING: [Synth 8-327] inferring latch for variable 'IRWre_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:132]
+WARNING: [Synth 8-327] inferring latch for variable 'InsMemRW_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:133]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:161]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:162]
+WARNING: [Synth 8-327] inferring latch for variable 'DBDataSrc_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:183]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:174]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:145]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 128   
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 72    
+	   2 Input      8 Bit        Muxes := 124   
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 127   
+	   4 Input      1 Bit        Muxes := 34    
+	   5 Input      1 Bit        Muxes := 105   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module KeyClock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LedDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PC_Source 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module IM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module DM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 128   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 72    
+	   2 Input      8 Bit        Muxes := 124   
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 122   
+	   4 Input      1 Bit        Muxes := 32    
+	   5 Input      1 Bit        Muxes := 96    
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "mcc_ins/cu_ins/ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[31]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[30]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[29]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[28]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[27]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[26]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[25]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[24]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[23]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[22]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[21]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[20]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[19]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[18]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[17]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[16]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[15]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[14]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[13]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[12]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[11]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[10]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[9]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[8]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[7]
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[2]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[3]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[4]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[5]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[6]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[7]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[8]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[9]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[10]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[11]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[12]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[13]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[14]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[15]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[16]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[17]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[18]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[19]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[20]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[21]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[22]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[23]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[24]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[25]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[26]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[27]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[28]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[29]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[30]' (FD) to 'led_ins/selector_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[31]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[30]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[29]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[28]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[27]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[26]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[25]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[24]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[23]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[22]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[21]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[20]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[19]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[18]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[17]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[16]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[15]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[14]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[13]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[12]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[11]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[10]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[9]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[8]) is unused and will be removed from module MCC_IMP.
+WARNING: [Synth 8-3332] Sequential element (mcc_ins/pc_ins/IAddr_reg_rep[7]) is unused and will be removed from module MCC_IMP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IM          | p_0_out    | 128x8         | LUT            | 
+|IM          | p_0_out    | 128x8         | LUT            | 
+|IM          | p_0_out    | 128x8         | LUT            | 
+|IM          | p_0_out    | 128x8         | LUT            | 
+|MCC_IMP     | p_0_out    | 128x8         | LUT            | 
+|MCC_IMP     | p_0_out    | 128x8         | LUT            | 
+|MCC_IMP     | p_0_out    | 128x8         | LUT            | 
+|MCC_IMP     | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|MCC_IMP     | mcc_ins/rf_ins/Regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 746.449 ; gain = 507.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|MCC_IMP     | mcc_ins/rf_ins/Regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.srcs/sources_1/new/CU.v:145]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    41|
+|3     |LUT1   |     9|
+|4     |LUT2   |   137|
+|5     |LUT3   |   353|
+|6     |LUT4   |    80|
+|7     |LUT5   |   199|
+|8     |LUT6   |  1640|
+|9     |MUXF7  |   577|
+|10    |MUXF8  |   256|
+|11    |RAM32M |    12|
+|12    |FDCE   |    41|
+|13    |FDPE   |     1|
+|14    |FDRE   |  1105|
+|15    |FDSE   |     4|
+|16    |LD     |    50|
+|17    |IBUF   |     5|
+|18    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------+------+
+|      |Instance          |Module             |Cells |
++------+------------------+-------------------+------+
+|1     |top               |                   |  4528|
+|2     |  clkdiv_ins      |ClockDiv           |    23|
+|3     |  keyclk_ins      |KeyClock           |     2|
+|4     |  led_ins         |LedDisplay         |    57|
+|5     |  mcc_ins         |Multiple_Cycle_CPU |  4422|
+|6     |    alu_ins       |ALU                |    12|
+|7     |    cu_ins        |CU                 |   629|
+|8     |    dm_ins        |DM                 |  2880|
+|9     |    im_ins        |IM                 |   249|
+|10    |    pc_ins        |PC                 |   192|
+|11    |    pc_source_ins |PC_Source          |     8|
+|12    |    rf_ins        |RF                 |   452|
++------+------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 817.746 ; gain = 244.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 817.746 ; gain = 578.875
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 941 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  LD => LDCE: 50 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 817.746 ; gain = 587.492
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jiahonzheng/Desktop/Multi-Cycle-CPU-Basys3/Multi-Cycle-CPU-Basys3.runs/synth_1/MCC_IMP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MCC_IMP_utilization_synth.rpt -pb MCC_IMP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 817.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 28 04:26:15 2018...

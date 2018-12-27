@@ -1,0 +1,217 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Fri Dec 28 04:26:57 2018
+| Host         : Jiahon-Station running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MCC_IMP_control_sets_placed.rpt
+| Design       : MCC_IMP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   146 |
+| Unused register locations in slices containing registers |    79 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      2 |            4 |
+|      3 |            1 |
+|      4 |            1 |
+|      5 |            1 |
+|      6 |            1 |
+|      8 |          128 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              95 |           63 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |            1060 |          766 |
+| Yes          | No                    | Yes                    |              39 |           18 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-----------------------------------------+-------------------------------+------------------+----------------+
+|              Clock Signal             |              Enable Signal              |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------------------------+-----------------------------------------+-------------------------------+------------------+----------------+
+|  mcc_ins/cu_ins/ExtSel_reg_i_2_n_0    |                                         |                               |                1 |              1 |
+|  mcc_ins/cu_ins/InsMemRW_reg_i_1_n_0  |                                         |                               |                1 |              1 |
+|  mcc_ins/cu_ins/IRWre_reg_i_2_n_0     |                                         |                               |                1 |              1 |
+| ~CLK_BUFG                             |                                         |                               |                1 |              1 |
+|  mcc_ins/cu_ins/out[2]                |                                         |                               |                2 |              2 |
+|  mcc_ins/cu_ins/RegDst_reg[1]_i_2_n_0 |                                         |                               |                1 |              2 |
+|  Div_CLK_BUFG                         |                                         | led_ins/selector[0]_i_1_n_0   |                1 |              2 |
+|  Div_CLK_BUFG                         |                                         | led_ins/selector[0]           |                1 |              2 |
+|  CLK_BUFG                             |                                         | mcc_ins/pc_ins/IAddr_reg[7]_0 |                3 |              3 |
+|  Div_CLK_BUFG                         | led_ins/Digital[3]_i_1_n_0              |                               |                2 |              4 |
+|  mcc_ins/cu_ins/toDisplay_reg[1][0]   |                                         |                               |                2 |              5 |
+|  mcc_ins/cu_ins/ALUSrcA_reg_i_2_n_0   |                                         |                               |                2 |              6 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[115][0][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[121][7][0]  |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[124][7][0]  |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[126][7][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[119][0][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[120][7][0]  |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[10][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[123][0][0]  |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[111][0][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[125][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[11][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[113][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[116][7][0]  |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[127][0][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[13][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[110][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[117][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[118][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[112][7][0]  |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[12][7][0]   |                               |                2 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[122][7][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[25][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[14][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[20][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[21][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[17][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[26][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[19][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[15][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[24][7][0]   |                               |                2 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[29][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[27][0][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[18][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[2][7][0]    |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[28][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[23][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[30][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[1][7][0]    |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[16][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[22][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[31][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[32][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[33][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[82][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[3][0][0]    |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[41][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[43][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[52][7][0]   |                               |                2 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[53][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[5][7][0]    |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[61][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[63][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[51][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[70][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[81][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[47][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[64][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[66][7]_1[0] |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[59][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[39][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[34][7]_0[0] |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[71][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[74][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[35][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[54][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[73][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[75][0][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[77][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[78][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[55][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[79][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[83][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[58][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[38][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[50][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[40][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[76][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[37][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[62][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[36][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[49][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[72][7]_0[0] |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[69][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[7][0][0]    |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[42][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[46][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[45][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[56][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[4][7][0]    |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[60][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[67][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[48][7][0]   |                               |                2 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[44][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[57][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[65][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[68][7][0]   |                               |                2 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[6][7][0]    |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[87][0][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[96][7][0]   |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[88][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[97][7][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[91][0][0]   |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[84][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[85][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[94][7][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[9][7][0]    |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[98][7]_0[0] |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[8][7][0]    |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[90][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[93][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[95][0][0]   |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[99][0][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[92][7][0]   |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[86][7][0]   |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[80][7][0]   |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[102][7][0]  |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[106][7][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[104][7][0]  |                               |                5 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[107][0][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[100][7][0]  |                               |                3 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[101][7][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[0][7][0]    |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[103][0][0]  |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[105][7][0]  |                               |                7 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[109][7][0]  |                               |                6 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[108][7][0]  |                               |                4 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[114][7][0]  |                               |                8 |              8 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[89][7][0]   |                               |                5 |              8 |
+|  Ori_CLK_IBUF_BUFG                    |                                         |                               |                5 |             17 |
+|  Div_CLK_BUFG                         |                                         |                               |               15 |             27 |
+|  IDataOut_reg[31]_i_2_n_0             |                                         |                               |               32 |             32 |
+|  CLK_BUFG                             | mcc_ins/cu_ins/E[0]                     |                               |               13 |             32 |
+|  CLK_BUFG                             | mcc_ins/cu_ins/IAddr_reg_rep[6][0]      | mcc_ins/pc_ins/IAddr_reg[7]_0 |               18 |             39 |
+| ~CLK_BUFG                             | mcc_ins/cu_ins/Data_Mem_reg[72][7]      |                               |               12 |             96 |
++---------------------------------------+-----------------------------------------+-------------------------------+------------------+----------------+
+
+
