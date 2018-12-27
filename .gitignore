@@ -1,5 +1,8 @@
 *
 !*/
+!MIPS-Compiler/in
+!MIPS-Compiler/MIPS-Compiler.cc
+!MIPS-Compiler/out
 !report/
 !*.doc
 !*.docx
